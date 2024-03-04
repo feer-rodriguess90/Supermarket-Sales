@@ -5,20 +5,11 @@ import plotly.express as px
 
 # Setting page size
 st.set_page_config(layout="wide")
+with st.container():
+    st.image('Logo-DataViz.png', width=250)
 
 # Read CSV file
 df = pd.read_csv("supermarket_sales.csv", sep=";", decimal=",")
-
-# Add image
-# df.add_layout_image(
-#     dict(
-#         source="https://github.com/feer-rodriguess90/Supermarket-Sales/blob/main/Logo-DataViz.png",
-#         xref="paper", yref="paper",
-#         x=1, y=1.05,
-#         sizex=0.2, sizey=0.2,
-#         xanchor="right", yanchor="bottom"
-#     )
-# )
 
 # Change Date type using to_datetime
 df["Date"] = pd.to_datetime(df["Date"])
@@ -34,8 +25,10 @@ month = st.sidebar.selectbox("Month", df["Month"].unique())
 df_filtered = df[df["Month"] == month]
 
 # Create the page layout with streamlit
+col0 = st.columns(1)
 col1, col2 = st.columns(2)
 col3, col4, col5 = st.columns(3)
+
 
 # Chart Revenue Filter per Day, Subsidiary, Unit
 fig_date = px.bar(df_filtered, x="Date", y="Total", color="City", title="Revenue Per Day")
