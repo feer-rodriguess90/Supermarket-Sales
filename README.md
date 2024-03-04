@@ -13,13 +13,25 @@ In this Supermarket Analysis Portfolio Project, we aim to gain insights into the
   - Streamlit: For building the dashboard
   - Pandas: For data manipulation
   - Plotly: For building charts
-  - 
+
 ## How to Use
 **1. Clone the Repository:**
 ```
 git clone https://github.com/your-username/supermarket-sales-analysis.git
 ```
 
+**2. Install Dependencies:**
+```
+pip install -r requirements.txt
+```
+
+**3. Run the Dashboard:**
+```
+streamlit run dashboard.py
+```
+
+**4. Interact with the Dashboard:**
+Once the dashboard is running, you can interact with it to explore the sales analysis insights.
 
 ## Additional Notes
 > [!IMPORTANT]
@@ -33,3 +45,5 @@ git clone https://github.com/your-username/supermarket-sales-analysis.git
 
 Please follow on github and join us! <br />
 Thanks to visiting me and good coding!
+
+![image](https://github.com/feer-rodriguess90/Supermarket-Sales/blob/main/Logo-DataViz.png)
