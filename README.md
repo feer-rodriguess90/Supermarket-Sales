@@ -30,8 +30,10 @@ pip install -r requirements.txt
 streamlit run dashboard.py
 ```
 
-**4. Interact with the Dashboard:**
+**4. Interact with the Dashboard:** <br>
 Once the dashboard is running, you can interact with it to explore the sales analysis insights.
+
+![gif](https://github.com/feer-rodriguess90/Supermarket-Sales/blob/main/SalesDashboard.gif)
 
 ## Additional Notes
 > [!IMPORTANT]
